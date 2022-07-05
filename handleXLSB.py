@@ -20,6 +20,9 @@ excel.ActiveWorkbook.Save()
 excel.DisplayAlerts = True # enabling prompts
 excel.ActiveWorkbook.Close()
 
+
+df=[] #setting up 
+
 with open_workbook(uploadLoc)  as wb:
     with wb.get_sheet(1) as sheet:
         for row in sheet.rows():
